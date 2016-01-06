@@ -27,18 +27,15 @@ Run bundle install
 bundle install
 ```
 ##Generators
-Get Started
-
-1. Install bootstrap
-This will install all of the bootstrap components
+Install bootstrap .This will install all of the bootstrap components
 ```ruby
 rails g bootstrap:install
 ```
-2. As an example, create a User MVC with the following attrbutes:
+As an example, create a User MVC with the following attrbutes:
 ```ruby
  "rails g scaffold User latitude:float longitude:float name:string address:string title:string"
  ```
-3. Run
+Run
 ```ruby
 "rake db:migrate"
 ```
@@ -51,7 +48,7 @@ This will ensure that  your home page will always default to the users/index.htm
 At this point, it might be good to restart your rails server.
 
 ##Requirements
-1. Add the following to your user model file "users.rb" which is located in models folder.
+Add the following to your user model file "users.rb" which is located in models folder.
 ```ruby
 class User < ActiveRecord::Base
     
@@ -60,20 +57,20 @@ class User < ActiveRecord::Base
     
 end
 ```
-Once you have successfully modified the model file you should see the latitude and longitude in the show view. 
-To get more information of the [geocode gem](https://github.com/alexreisner/geocoder)
+Once you have successfully modified the model file, you should see the latitude and longitude in your users views. 
+To get more information on the [geocode gem](https://github.com/alexreisner/geocoder)
 
-2. Javascript Dependencies
+Javascript Dependencies
 you want to add the follwoing at the top of the page where you want to display your map.
 ```ruby
 <script src="//maps.google.com/maps/api/js?v=3.18&sensor=false&client=&key=&libraries=geometry&language=&hl=&region="></script> 
 <script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js"></script>
 <script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.9/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
 ```
-You will be require to make a "underscore.js" file then copy and paste the Production Version of this code [here](http://underscorejs.org/underscore-min.js)  and place it in the
+You will be require to make a "underscore.js" file then copy and paste the "Production Version" of this code [here](http://underscorejs.org/underscore-min.js)  and place it in the
 "underscore.js" you just created. Then move the file in to the "vendor\assets\javascripts" folder To find out more about Uderscore.js go to [underscorejs.org](http://underscorejs.org/)
 
-3. You want to add the following into the appication.js file which is located in "app\assets\javascripts\appication.js"
+You want to add the following into the appication.js file which is located in "app\assets\javascripts\appication.js"
 ```ruby
 //= require underscore
 //= require gmaps/google
@@ -84,7 +81,7 @@ rails g gmaps4rails:copy_js
 ```
 This will import the asset pipline files.
 
-3. HTML
+HTML
 Add the div to hold the map code in the file you want to display the map, exmaple:
 ```ruby
 <div style='width: 800px;'>
