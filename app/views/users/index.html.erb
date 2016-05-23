@@ -46,7 +46,7 @@
   </div>
 
 <script type="text/javascript">
-  handler = Gmaps.build('Google');
+ handler = Gmaps.build('Google');
 handler.buildMap({
     provider: {
       disableDefaultUI: false
@@ -62,5 +62,8 @@ handler.buildMap({
     handler.fitMapToBounds();
   }
 );
+</script>
+<script>
+    markers = handler.addMarkers(<%=raw @hash.to_json %>);
 </script>
 
