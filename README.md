@@ -63,9 +63,9 @@ To get more information on the [geocode gem](https://github.com/alexreisner/geoc
 Javascript Dependencies
 you want to add the follwoing at the top of the page where you want to display your map.
 ```ruby
-<script src="//maps.google.com/maps/api/js?v=3.18&sensor=false&client=&key=&libraries=geometry&language=&hl=&region="></script> 
-<script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js"></script>
-<script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.9/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
+<script src="//maps.google.com/maps/api/js?v=3.23&sensor=false&client=&key=&libraries=geometry&language=&hl=&region="></script> 
+<script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+<script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
 ```
 You will be require to make a "underscore.js" file then copy and paste the "Production Version" of this code [here](http://underscorejs.org/underscore-min.js)  and place it in the
 "underscore.js" you just created. Then move the file in to the "vendor\assets\javascripts" folder To find out more about Uderscore.js go to [underscorejs.org](http://underscorejs.org/)
